@@ -18,7 +18,7 @@ You authenticate to the Vero API by providing your API Key and API Secret (techn
 **Note:** You need to include this on every page of your website.
 
 ```js
-// Initialise the library
+// Initialise the library.
 _veroq.push(['init', {
   api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda", 
   secret: "6199a8f09f03970d28d45c7f4325817c0ad7238b",
@@ -40,6 +40,8 @@ _veroq.push(['init', {
 }]);
 ```
 
+***
+
 # User identification
 
 To use Vero you need to identify your users. To identify a user you must record their email. By default, Vero saves a user across sessions so you should identify any user each time they subscribe, sign up or log in to your service. The Javascript API will handle the rest.
@@ -59,6 +61,8 @@ Information is passed up in the standard JSON format.
 ```js
 _veroq.push(['user', {email: 'chris@getvero.com', name: 'Chris Hexton', age: 24} ]);
 ```
+
+***
 
 # Tracking events
 
