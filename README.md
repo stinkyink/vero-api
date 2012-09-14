@@ -3,6 +3,11 @@ vero-api
 
 API documentation for Vero (http://www.getvero.com)
 
+API
+-----------------
+
+* [User API](https://github.com/getvero/vero-api/blob/master/sections/api/users.md)
+
 SDK guides
 -----------------
 
