@@ -52,3 +52,23 @@ PUT https://www.getvero.com/api/v2/users/tags/edit.json
   "remove": ["warm_lead"]
 }
 ```
+
+## Unsubscribe user
+
+### POST /api/v2/users/unsubscribe.json
+
+This endpoint will unsubscribe a user from all future email communications. The following parameters are accepted:
+
+- email (required) - the user's existing email address in Vero
+- auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
+
+**Example request:**
+
+```
+POST https://www.getvero.com/api/v2/users/unsubscribe.json
+
+{
+  "email": "james@getvero.com",
+  "auth_token": "exampleAuthToken"
+}
+```
