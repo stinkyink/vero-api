@@ -1,11 +1,35 @@
 # Setup
 
-You authenticate to the Vero API by providing your Auth Token. To get your token, login to Vero and select the 'Account' option from the top right hand menu.
+You authenticate with the Vero API by using your `auth_token`. To get your token, login to Vero and select the 'Account' option from the top right hand menu.
+
+***
+
+
+# Tracking events
+
+All emails built and sent in Vero are based on user actions. Theoretically, the more events you capture the more complex you can make your marketing emails.
+
+Events can be used to send an email straight away, with delay, segmented or in sequence. Much like an analytics package, tracking user events simply involves calling the 'track' method.
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v1/track.json -X POST \
--d "auth_token": "NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm" 
+curl http://www.getvero.com/api/v2/events/track.json \
+-d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
+-d identity['email']=chris.hexton@gmail.com \
+-d event_name=viewed_documentation 
+```
+
+## Optional data
+
+Further to recording a user's individual details, you may want to include data specific to an event. This data can be used dynamically when building emails (e.g. a product's name could be recorded when a user 'Views a product').
+
+**EXAMPLE REQUEST**
+```curl
+curl http://www.getvero.com/api/v2/events/track.json \
+-d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
+-d identity['email']=chris.hexton@gmail.com \
+-d event_name=viewed_documentation \
+-d data['link']='http://getvero.com/docs'
 ```
 
 ## Development Mode
@@ -16,7 +40,7 @@ This enables you to test Vero without any risk of accidentally emailing your cus
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v1/track.json \
+curl http://www.getvero.com/api/v2/events/track.json \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d development_mode=true
 ```
@@ -25,11 +49,11 @@ curl http://www.getvero.com/api/v1/track.json \
 
 # User identification
 
-To use Vero you need to identify your users. To identify a user you must record their email. When using cURL you must identify a user with each request.
+When you track an event in Vero, we simultaneously handle user identification. At a bare minimum, you must record a user's email.
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v1/track.json \
+curl http://www.getvero.com/api/v2/events/track.json \
 -d
 auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \
 -d identity['email']=chris.hexton@gmail.com
@@ -43,38 +67,9 @@ You do not need to pass each variable with every request, they are stored the fi
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v1/track.json \
+curl http://www.getvero.com/api/v2/events/track.json \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d identity['email']=chris.hexton@gmail.com \
 -d identity['name']="Chris Hexton" \
 -d identity['age']=28
-```
-
-***
-
-# Tracking events
-
-All emails built and sent in Vero are based on user actions. Theoretically, the more events you capture the more complex you can make your marketing emails.
-
-Events can be used to send an email straight away, with delay, segmented or in sequence. Much like an analytics package, tracking user events simply involves calling the 'track' method.
-
-**EXAMPLE REQUEST**
-```curl
-curl http://www.getvero.com/api/v1/track.json \
--d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
--d identity['email']=chris.hexton@gmail.com \
--d event_name=viewed_documentation 
-```
-
-## Optional data
-
-Further to recording a user's individual details, you may want to include data specific to an event. This data can be used dynamically when building emails (e.g. a product's name could be recorded when a user 'Views a product').
-
-**EXAMPLE REQUEST**
-```curl
-curl http://www.getvero.com/api/v1/track.json \
--d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
--d identity['email']=chris.hexton@gmail.com \
--d event_name=viewed_documentation \
--d data['link']='http://getvero.com/docs'
 ```
