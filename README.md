@@ -6,6 +6,7 @@ API documentation for Vero (http://www.getvero.com)
 API
 -----------------
 
+* [Events API](https://github.com/getvero/vero-api/blob/master/sections/api/events.md)
 * [User API](https://github.com/getvero/vero-api/blob/master/sections/api/users.md)
 
 SDK guides
