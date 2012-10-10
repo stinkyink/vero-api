@@ -20,8 +20,7 @@ You authenticate to the Vero API by providing your API Key and API Secret (techn
 ```js
 // Initialise the library.
 _veroq.push(['init', {
-  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda", 
-  secret: "6199a8f09f03970d28d45c7f4325817c0ad7238b",
+  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda"
 }]);
 ```
 
@@ -34,8 +33,7 @@ This enables you to test Vero without any risk of accidentally emailing your cus
 ```js
 // Simply switch the development_mode flag to true when you initialise the library.
 _veroq.push(['init', {
-  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda", 
-  secret: "6199a8f09f03970d28d45c7f4325817c0ad7238b",
+  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda",
   development_mode: true
 }]);
 ```
