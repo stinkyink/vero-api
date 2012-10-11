@@ -13,7 +13,7 @@ Our Javascript library is one of the fastest ways to get up and running with Ver
 
 ## Authentication
 
-You authenticate to the Vero API by providing your API Key and API Secret (technically a salt, really). You can get these by logging in and selecting the 'Account' option from the top right-hand menu.
+You authenticate to the Vero API by providing your API Key. You can get these by logging in and selecting the 'Account' option from the top right-hand menu.
 
 **Note:** You need to include this on every page of your website.
 
