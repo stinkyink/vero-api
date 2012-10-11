@@ -15,7 +15,7 @@ SDK guides
 * [cURL](https://github.com/getvero/vero-api/blob/master/sections/curl.md)
 * [Ruby/Rails](https://github.com/getvero/vero-api/blob/master/sections/ruby.md)
 * [JavaScript](https://github.com/getvero/vero-api/blob/master/sections/js.md)
-* [MixPanel](https://github.com/getvero/vero-api/blob/master/sections/mixpanel.md)
+* [Mixpanel](https://github.com/getvero/vero-api/blob/master/sections/mixpanel.md)
 * [KISSMetrics](https://github.com/getvero/vero-api/blob/master/sections/kissmetrics.md)
 
 Help us make it better
