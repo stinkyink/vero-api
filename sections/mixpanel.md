@@ -45,8 +45,7 @@ Simply copy in the code to the right and replace your API Key and API Secret to 
   setTimeout(function(){if(typeof window.Semblance=="undefined"){console.log("Vero did not load in time.");for(var i=0;i<_veroq.length;i++){a=_veroq[i];if(a.length==3&&typeof a[2]=="function")a[2](null,false);}}},3000);
 
   _veroq.push(['init', {
-      api_key: 'API_KEY', 
-      secret: 'API_SECRET'
+      api_key: 'API_KEY'
     }, function (vero, loaded){ 
       if (loaded)
         window.mixpanel.splice(0, 0, vero.listeners.attach_to_mixpanel)
