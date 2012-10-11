@@ -31,7 +31,7 @@ Don't panic, we've included a failsafe below that ensures KISSMetrics will load 
 
 Once you have prepared the KISSMetrics code you can load the Vero library and initialise Vero itself.
 
-Simply copy in the code to the right and replace your API Key and API Secret to do so.
+Simply copy in the code to the right and replace your API Key to do so.
 
 ```html
 <script type="text/javascript">
@@ -40,8 +40,7 @@ Simply copy in the code to the right and replace your API Key and API Secret to 
   setTimeout(function(){if(typeof window.Semblance=="undefined"){console.log("Vero did not load in time.");for(var i=0;i<_veroq.length;i++){a=_veroq[i];if(a.length==3&&typeof a[2]=="function")a[2](null,false);}}},3000);
 
   _veroq.push(['init', {
-    api_key: 'API_KEY',
-    secret: 'API_SECRET'
+    api_key: 'API_KEY'
   }, function(vero, loaded) {
     if (loaded)
       window._kmq.splice(0, 0, vero.listeners.attach_to_kissmetrics);
@@ -61,8 +60,7 @@ Simply switch the development_mode flag to true when you initialise the library.
 
 ```js
 _veroq.push(['init', {
-  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda", 
-  secret: "6199a8f09f03970d28d45c7f4325817c0ad7238b",
+  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda",
   development_mode: true
 }]);
 ```
