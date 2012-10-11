@@ -26,7 +26,7 @@ Don't panic, we've included a failsafe below that ensures Mixpanel will load eve
   loadMixpanel = function(c) {
 
     // This snippet loads Mixpanels javascript library. This will be called either: a) after Vero successfully loads or, b) three (3) seconds after the page loads (a failsafe if Vero failed to load).
-    var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);
+    var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);
 
   };
 </script>
@@ -36,7 +36,7 @@ Don't panic, we've included a failsafe below that ensures Mixpanel will load eve
 
 Once you have prepared the Mixpanel code you can load the Vero library and initialise Vero itself.
 
-Simply copy in the code to the right and replace your API Key and API Secret to do so.
+Simply copy in the code to the right and replace your API Key to do so.
 
 ```html
 <script type="text/javascript">
