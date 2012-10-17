@@ -60,7 +60,7 @@ Simply switch the development_mode flag to true when you initialise the library.
 
 ```js
 _veroq.push(['init', {
-  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda",
+  api_key: 'API_KEY',
   development_mode: true
 }]);
 ```
