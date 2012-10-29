@@ -11,6 +11,7 @@ This endpoint will update the email address and/or custom attributes for a user.
 - email (required) - the user's existing email address in Vero
 - auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
 - changes - a JSON object with changes you the user
+- development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
 
 **Example request:**
 
@@ -37,6 +38,7 @@ This endpoint will update the tags for an existing user. The following parameter
 - auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
 - add (optional) - a JSON array containing the tags to add to the user
 - remove (optional) - a JSON array containing the tags to remove from the user
+- development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
 
 **NOTE:** Although both `add` and `remove` have been marked as optional, at least one is required or else a 400 error will be returned.
 
