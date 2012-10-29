@@ -8,7 +8,7 @@ Vero maintains a representation of each user you track with our API or CapsuleCR
 
 This endpoint will update the email address and/or custom attributes for a user. The following parameters are accepted:
 
-- email (required) - the user's existing email address in Vero
+- id (required) - the unique string identifying the user. This could be user's email address.
 - auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
 - changes - a JSON object with changes you the user
 - development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
@@ -19,7 +19,7 @@ This endpoint will update the email address and/or custom attributes for a user.
 PUT https://www.getvero.com/api/v2/users/edit.json
 
 {
-  "email": "james@getvero.com",
+  "id": "james@getvero.com",
   "auth_token": "exampleAuthToken",
   "changes": {
     "email": "new_email@getvero.com",
@@ -34,7 +34,7 @@ PUT https://www.getvero.com/api/v2/users/edit.json
 
 This endpoint will update the tags for an existing user. The following parameters are accepted:
 
-- email (required) - the user's existing email address in Vero
+- id (required) - the unique string identifying the user. This could be user's email address.
 - auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
 - add (optional) - a JSON array containing the tags to add to the user
 - remove (optional) - a JSON array containing the tags to remove from the user
@@ -48,7 +48,7 @@ This endpoint will update the tags for an existing user. The following parameter
 PUT https://www.getvero.com/api/v2/users/tags/edit.json
 
 {
-  "email": "james@getvero.com",
+  "id": "james@getvero.com",
   "auth_token": "exampleAuthToken",
   "add": ["rubyist"],
   "remove": ["warm_lead"]
@@ -61,7 +61,7 @@ PUT https://www.getvero.com/api/v2/users/tags/edit.json
 
 This endpoint will unsubscribe a user from all future email communications. The following parameters are accepted:
 
-- email (required) - the user's existing email address in Vero
+- id (required) - the unique string identifying the user. This could be user's email address.
 - auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
 
 **Example request:**
@@ -70,7 +70,7 @@ This endpoint will unsubscribe a user from all future email communications. The 
 POST https://www.getvero.com/api/v2/users/unsubscribe.json
 
 {
-  "email": "james@getvero.com",
+  "id": "james@getvero.com",
   "auth_token": "exampleAuthToken"
 }
 ```
