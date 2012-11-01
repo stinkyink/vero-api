@@ -8,10 +8,38 @@ Vero maintains a representation of each user you track with our API or CapsuleCR
 
 This endpoint will update the email address and/or custom attributes for a user. The following parameters are accepted:
 
-- id (required) - the unique string identifying the user. This could be user's email address.
-- auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
-- changes - a JSON object with changes you the user
-- development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Required?</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>the unique string identifying the user. This could be user's email address.</td>
+  </tr>
+  <tr>
+    <td>auth_token</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
+  </tr>
+  <tr>
+    <td>changes</td>
+    <td>Yes</td>
+    <td>JSON object</td>
+    <td>a set of changes to the user attributes.</td>
+  </tr>
+  <tr>
+    <td>development_mode</td>
+    <td>No</td>
+    <td>Boolean</td>
+    <td>indicates whether the event is tracked in development mode. default: false</td>
+  </tr>
+</table>
 
 **Example request:**
 
@@ -34,11 +62,44 @@ PUT https://www.getvero.com/api/v2/users/edit.json
 
 This endpoint will update the tags for an existing user. The following parameters are accepted:
 
-- id (required) - the unique string identifying the user. This could be user's email address.
-- auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
-- add (optional) - a JSON array containing the tags to add to the user
-- remove (optional) - a JSON array containing the tags to remove from the user
-- development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Required?</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>the unique string identifying the user. This could be user's email address.</td>
+  </tr>
+  <tr>
+    <td>auth_token</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
+  </tr>
+  <tr>
+    <td>add</td>
+    <td>No</td>
+    <td>JSON array</td>
+    <td>the tags to add to the user.</td>
+  </tr>
+  <tr>
+    <td>remove</td>
+    <td>No</td>
+    <td>JSON array</td>
+    <td>the tags to remove from the user.</td>
+  </tr>
+  <tr>
+    <td>development_mode</td>
+    <td>No</td>
+    <td>Boolean</td>
+    <td>indicates whether the event is tracked in development mode. default: false</td>
+  </tr>
+</table>
 
 **NOTE:** Although both `add` and `remove` have been marked as optional, at least one is required or else a 400 error will be returned.
 
@@ -61,8 +122,26 @@ PUT https://www.getvero.com/api/v2/users/tags/edit.json
 
 This endpoint will unsubscribe a user from all future email communications. The following parameters are accepted:
 
-- id (required) - the unique string identifying the user. This could be user's email address.
-- auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Required?</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>the unique string identifying the user. This could be user's email address.</td>
+  </tr>
+  <tr>
+    <td>auth_token</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
+  </tr>
+</table>
 
 **Example request:**
 
