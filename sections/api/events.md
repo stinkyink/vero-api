@@ -8,10 +8,38 @@ The core offering of Vero is to respond to how your users interact with your sof
 
 This endpoint will track an event for a user. The following parameters are accepted:
 
-- auth_token (required) - your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)
-- event_name (required) - the name of the event
-- identity (required) - a JSON object which contains a set of user attributes. This object **must** contain at least one field, 'id' (a unique string for the user)
-- development_mode (optional) - a boolean to indicate whether the event is tracked in development mode. default: false
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Required?</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auth_token</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
+  </tr>
+  <tr>
+    <td>event_name</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>the name of the event</td>
+  </tr>
+  <tr>
+    <td>identity</td>
+    <td>Yes</td>
+    <td>JSON object</td>
+    <td>a set of user attributes. This object **must** contain at least one field, 'id' (a unique string for the user)</td>
+  </tr>
+  <tr>
+    <td>development_mode</td>
+    <td>No</td>
+    <td>Boolean</td>
+    <td>indicates whether the event is tracked in development mode. default: false</td>
+  </tr>
+</table>
 
 **Example request:**
 
