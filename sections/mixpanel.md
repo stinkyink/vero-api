@@ -10,6 +10,8 @@ To the right is a copy of the full Mixpanel integration code, as taken from thei
 
 Don't panic, we've included a failsafe below that ensures Mixpanel will load even if Vero does not. This failsafe is designed to ensure Vero does not interfere with your Mixpanel installation.
 
+**Note:** You must replace `TOKEN_ID` with a valid Mixpanel API token.
+
 ```html
 <script type="text/javascript">
   window.mixpanel = (function (a) {
