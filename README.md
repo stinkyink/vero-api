@@ -21,7 +21,7 @@ Libraries
 -----------------
 
 * [vero](https://github.com/getvero/vero) - official Rails 3.x gem
-* [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to benorama)
+* [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to [benorama](https://github.com/benorama))
 
 Help us make it better
 ----------------------
