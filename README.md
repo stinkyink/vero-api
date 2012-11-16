@@ -9,14 +9,19 @@ API
 * [Events API](https://github.com/getvero/vero-api/blob/master/sections/api/events.md)
 * [User API](https://github.com/getvero/vero-api/blob/master/sections/api/users.md)
 
-SDK guides
+Guides
 -----------------
 
 * [cURL](https://github.com/getvero/vero-api/blob/master/sections/curl.md)
-* [Ruby/Rails](https://github.com/getvero/vero)
 * [JavaScript](https://github.com/getvero/vero-api/blob/master/sections/js.md)
 * [Mixpanel](https://github.com/getvero/vero-api/blob/master/sections/mixpanel.md)
 * [KISSMetrics](https://github.com/getvero/vero-api/blob/master/sections/kissmetrics.md)
+
+Libraries
+-----------------
+
+* [vero](https://github.com/getvero/vero) - official Rails 3.x gem
+* [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to benorama)
 
 Help us make it better
 ----------------------
