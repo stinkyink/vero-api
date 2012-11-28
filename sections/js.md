@@ -7,7 +7,7 @@ Our Javascript library is one of the fastest ways to get up and running with Ver
 ```html
 <script type="text/javascript">
   var _veroq = _veroq || []; 
-  function(){var ve = document.createElement('script');ve.type = 'text/javascript';ve.async = true;ve.src = '//www.getvero.com/assets/m.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
+  (function(){var ve = document.createElement('script');ve.type = 'text/javascript';ve.async = true;ve.src = '//www.getvero.com/assets/m.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
 </script>
 ```
 
