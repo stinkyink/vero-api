@@ -34,6 +34,12 @@ This endpoint will track an event for a user. The following parameters are accep
     <td>a set of user attributes. This object **must** contain at least one field, 'id' (a unique string for the user)</td>
   </tr>
   <tr>
+    <td>data</td>
+    <td>No</td>
+    <td>JSON object</td>
+    <td>a set of event attributes.</td>
+  </tr>
+  <tr>
     <td>development_mode</td>
     <td>No</td>
     <td>Boolean</td>
@@ -54,6 +60,9 @@ POST https://www.getvero.com/api/v2/events/track.json
     "age": 25
   },
   "event_name": "test_event",
+  "data": {
+    "order_id": "10"
+  }
   "development_mode": false
 }
 ```
