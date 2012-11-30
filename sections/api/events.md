@@ -62,7 +62,7 @@ POST https://www.getvero.com/api/v2/events/track.json
   "event_name": "test_event",
   "data": {
     "order_id": "10"
-  }
+  },
   "development_mode": false
 }
 ```
