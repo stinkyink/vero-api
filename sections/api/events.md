@@ -55,7 +55,7 @@ POST https://www.getvero.com/api/v2/events/track.json
 {
   "auth_token": "exampleAuthToken",
   "identity": {
-    "id": "new_email@getvero.com"
+    "id": "new_email@getvero.com",
     "email": "new_email@getvero.com",
     "age": 25
   },
