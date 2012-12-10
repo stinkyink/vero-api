@@ -6,9 +6,9 @@ When integrating with Mixpanel, Vero will simultaneously track all events record
 
 The only change required to configure Vero for the Mixpanel integration is to wrap the Mixpanel initialisation code in it's own method. This is required so that it is loaded only after Vero initialises.
 
-To the right is a copy of the full Mixpanel integration code, as taken from their setup guide, wrapped in it's own method.
+Below is a copy of the full Mixpanel integration code, as taken from their setup guide, wrapped in it's own method.
 
-Don't panic, we've included a failsafe below that ensures Mixpanel will load even if Vero does not. This failsafe is designed to ensure Vero does not interfere with your Mixpanel installation.
+Don't panic, we've included a failsafe that ensures Mixpanel will load even if Vero does not. This failsafe is designed so that Vero does not interfere with your Mixpanel installation.
 
 **Note:** You must replace `TOKEN_ID` with a valid Mixpanel API token.
 
@@ -27,7 +27,7 @@ Don't panic, we've included a failsafe below that ensures Mixpanel will load eve
 
   loadMixpanel = function(c) {
 
-    // This snippet loads Mixpanels javascript library. This will be called either: a) after Vero successfully loads or, b) three (3) seconds after the page loads (a failsafe if Vero failed to load).
+    // This snippet loads Mixpanel's javascript library. This will be called either: a) after Vero successfully loads or, b) three (3) seconds after the page loads (a failsafe if Vero failed to load).
     var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);
 
   };
@@ -38,7 +38,7 @@ Don't panic, we've included a failsafe below that ensures Mixpanel will load eve
 
 Once you have prepared the Mixpanel code you can load the Vero library and initialise Vero itself.
 
-Simply copy in the code to the right and replace your API Key to do so.
+Simply copy in the code and replace your API Key to do so.
 
 ```html
 <script type="text/javascript">
@@ -71,4 +71,19 @@ _veroq.push(['init', {
   api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda",
   development_mode: true
 }]);
+```
+
+## Identifying a user
+
+Because Vero records your user's identities and the events they track independently of Mixpanel, we require you to identify your user again.To do so you can either:
+
+```js
+// Identify a user with an email address
+mixpanel.identify("user_email@domain.com");
+```
+
+```js
+// Identify a user with a unique identifier
+mixpanel.identify("user_123")
+_veroq.push(["user", {"id": "user_123", "email": "user_email@domain.com"}]);
 ```
