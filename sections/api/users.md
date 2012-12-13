@@ -56,6 +56,24 @@ PUT https://www.getvero.com/api/v2/users/edit.json
 }
 ```
 
+#### Note: Changing Timezones
+
+By default our Javascript library will detect a customer's timezone and track this as a user attribute. The timezone is stored as a numeric value relative to GMT. PST, for example, would be stored as -8. You can manually override a customers timezone by updating this attribute in the same way you would update any other.
+
+**Example request:**
+
+```
+PUT https://www.getvero.com/api/v2/users/edit.json
+
+{
+  "id": "james@getvero.com",
+  "auth_token": "exampleAuthToken",
+  "changes": {
+    "timezone": -8
+  }
+}
+```
+
 ## Edit user tags
 
 ### PUT /api/v2/users/tags/edit.json
