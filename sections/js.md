@@ -44,10 +44,13 @@ _veroq.push(['init', {
 
 To use Vero you need to identify your users. To identify a user you must record their email. By default, Vero saves a user across sessions so you should identify any user each time they subscribe, sign up or log in to your service. The Javascript API will handle the rest.
 
-**Note:** The `user` command must always include an email.
+**Note:** The `user` command must always include an ID and email.
 
 ```js
-_veroq.push(['user', {email: 'chris@getvero.com'} ]);
+_veroq.push(['user', {
+  id: '1', // The ID must be unique, it may be simply the customer's email address
+  email: 'chris@getvero.com'
+} ]);
 ```
 
 ## Optional data
@@ -57,7 +60,7 @@ Using customer data is an important part of building and triggering lifecycle em
 Information is passed up in the standard JSON format.
 
 ```js
-_veroq.push(['user', {email: 'chris@getvero.com', name: 'Chris Hexton', age: 24} ]);
+_veroq.push(['user', {id: '1', email: 'chris@getvero.com', name: 'Chris Hexton', age: 24} ]);
 ```
 
 ***
