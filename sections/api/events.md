@@ -4,7 +4,7 @@ The core offering of Vero is to respond to how your users interact with your sof
 
 ## Track events
 
-### POST /api/v2/events/track.json
+### POST /api/v2/events/track
 
 This endpoint will track an event for a user. The following parameters are accepted:
 
@@ -50,7 +50,7 @@ This endpoint will track an event for a user. The following parameters are accep
 **Example request:**
 
 ```
-POST https://www.getvero.com/api/v2/events/track.json
+POST https://www.getvero.com/api/v2/events/track
 
 {
   "auth_token": "exampleAuthToken",
