@@ -4,7 +4,7 @@ Vero maintains a representation of each user you track with our API or CapsuleCR
 
 ## Edit users
 
-### PUT /api/v2/users/edit.json
+### PUT /api/v2/users/edit
 
 This endpoint will update the email address and/or custom attributes for a user. The following parameters are accepted:
 
@@ -44,7 +44,7 @@ This endpoint will update the email address and/or custom attributes for a user.
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/edit.json
+PUT https://www.getvero.com/api/v2/users/edit
 
 {
   "id": "james@getvero.com",
@@ -63,7 +63,7 @@ By default our Javascript library will detect a customer's timezone and track th
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/edit.json
+PUT https://www.getvero.com/api/v2/users/edit
 
 {
   "id": "james@getvero.com",
@@ -76,7 +76,7 @@ PUT https://www.getvero.com/api/v2/users/edit.json
 
 ## Edit user tags
 
-### PUT /api/v2/users/tags/edit.json
+### PUT /api/v2/users/tags/edit
 
 This endpoint will update the tags for an existing user. The following parameters are accepted:
 
@@ -124,7 +124,7 @@ This endpoint will update the tags for an existing user. The following parameter
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/tags/edit.json
+PUT https://www.getvero.com/api/v2/users/tags/edit
 
 {
   "id": "james@getvero.com",
@@ -136,7 +136,7 @@ PUT https://www.getvero.com/api/v2/users/tags/edit.json
 
 ## Unsubscribe user
 
-### POST /api/v2/users/unsubscribe.json
+### POST /api/v2/users/unsubscribe
 
 This endpoint will unsubscribe a user from all future email communications. The following parameters are accepted:
 
@@ -164,7 +164,7 @@ This endpoint will unsubscribe a user from all future email communications. The 
 **Example request:**
 
 ```
-POST https://www.getvero.com/api/v2/users/unsubscribe.json
+POST https://www.getvero.com/api/v2/users/unsubscribe
 
 {
   "id": "james@getvero.com",
