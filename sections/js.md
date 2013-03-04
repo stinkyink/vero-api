@@ -1,28 +1,21 @@
 # Setup
 
-Our Javascript library is one of the fastest ways to get up and running with Vero. To get started simply setup include the Javascript library itself and assign the Vero Queue just before the `<\head>` tag of your webpage.
+Our Javascript library is one of the fastest ways to get up and running with Vero. To get started simply initialize the library just before the `<\head>` tag of your webpage. You authenticate with the Vero API by providing your API Key. You can get find this by logging in and selecting the 'Account' option from the top right-hand menu.
 
 **Note:** You need to include this on every page of your website.
 
 ```html
 <script type="text/javascript">
-  var _veroq = _veroq || []; 
+  var _veroq = _veroq || [];
+  _veroq.push(['init', {
+    api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda"
+  }]);
+  
   (function(){var ve = document.createElement('script');ve.type = 'text/javascript';ve.async = true;ve.src = '//www.getvero.com/assets/m.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
 </script>
 ```
 
-## Authentication
-
-You authenticate to the Vero API by providing your API Key. You can get these by logging in and selecting the 'Account' option from the top right-hand menu.
-
-**Note:** You need to include this on every page of your website.
-
-```js
-// Initialise the library.
-_veroq.push(['init', {
-  api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda"
-}]);
-```
+It important that the "init" command is run before tracking an event or identifying an user.
 
 ## Development Mode
 
