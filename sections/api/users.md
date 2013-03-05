@@ -2,6 +2,66 @@
 
 Vero maintains a representation of each user you track with our API or CapsuleCRM integration. If you want to change any of your user's details, you can make use of our new User API. 
 
+### POST /api/v2/events/track
+
+This endpoint will track an event for a user. The following parameters are accepted:
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Required?</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>auth_token</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>the unique string identifying the user. This could be user's email address.</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>No</td>
+    <td>String</td>
+    <td>the user's email address. This must be a valid email address, and is required if you would like the user to receive your campaigns.</td>
+  </tr>
+  <tr>
+    <td>data</td>
+    <td>No</td>
+    <td>JSON object</td>
+    <td>a set of user attributes.</td>
+  </tr>
+  <tr>
+    <td>development_mode</td>
+    <td>No</td>
+    <td>Boolean</td>
+    <td>indicates whether the user is tracked in development mode. default: false</td>
+  </tr>
+</table>
+
+**Example request:**
+
+```
+POST https://www.getvero.com/api/v2/users/track
+
+{
+  "auth_token": "exampleAuthToken",
+  "id": "user_id",
+  "email": "an_email_address@yourdomain.com",
+  "data": {
+    "first_name": "James",
+    "age": 25
+  },
+  "development_mode": false
+}
+```
+
 ## Edit users
 
 ### PUT /api/v2/users/edit
