@@ -4,7 +4,7 @@ Vero maintains a representation of each user you track with our API or CapsuleCR
 
 ## Tracking users
 
-### POST /api/v2/events/track
+### POST /api/v2/users/track
 
 This endpoint will track an event for a user. The following parameters are accepted:
 
