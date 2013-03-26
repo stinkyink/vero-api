@@ -10,6 +10,10 @@ User data are globally accessible properties describing the user that change ver
 
 Event data on the other hand are additional properties which describe the event and are only accessible in the scope of the event. These properties are tied to the event profile, and examples include product name, and task name.
 
+Vero allows you to make use of user and event properties in your campaigns for either conditions (e.g. User has user property age equal to 25) or content. To sub a property into your Vero campaign, use the following format:
+
+{{user.age}} or {{event.item_price}}
+
 ## Track events
 
 ### POST /api/v2/events/track
@@ -91,8 +95,8 @@ POST https://www.getvero.com/api/v2/events/track
   },
   "event_name": "add_to_cart",
   "data": {
-    "item": "Blue shoes",
-    "price": 40.00
+    "item_name": "Blue shoes",
+    "item_price": 40.00
   }
 }
 ```
