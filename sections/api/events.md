@@ -21,7 +21,13 @@ This endpoint will track an event for a user. The following parameters are accep
     <td>Yes</td>
     <td>String</td>
     <td>your API authorisation token. This can be found by logging into your Vero account and selecting "Account" (at the top of the page)</td>
-    <td>ZmIxM2NkZGZmZjY4YzFjMTIxYzZmMTlmNmM4NDY3ZTc5N2Y0NmVkYTo2MTk5YThmMDlmMDM5NzBkMjhkNDVjN2Y0MzI1ODE3YzBhZDcyMzhi</td>
+    <td>
+      ZmIxM2NkZGZmZjY4YzFjMTI
+      xYzZmMTlmNmM4NDY3ZTc5N2
+      Y0NmVkYTo2MTk5YThmMDlmM
+      DM5NzBkMjhkNDVjN2Y0MzI1
+      ODE3YzBhZDcyMzhi
+    </td>
   </tr>
   <tr>
     <td>event_name</td>
