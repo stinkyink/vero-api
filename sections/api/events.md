@@ -89,7 +89,7 @@ POST https://www.getvero.com/api/v2/events/track
     "id": "1",
     "email": "janedoe@getvero.com"
   },
-  "event_name": "user_signed_up",
+  "event_name": "add_to_cart",
   "data": {
     "item": "Blue shoes",
     "price": 40.00
