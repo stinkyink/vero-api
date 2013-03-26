@@ -40,7 +40,7 @@ This endpoint will track an event for a user. The following parameters are accep
     <td>identity</td>
     <td>Yes</td>
     <td>JSON object</td>
-    <td>a set of user attributes. This object **must** contain an "id" (a unique string for the user) field, and it is recommended that you also supply the user's "email" as well</td>
+    <td>a set of user attributes. This object <b>must</b> contain an "id" (a unique string for the user) field, and it is recommended that you also supply the user's "email" as well</td>
     <td>{"id": "james@getvero.com", "email": "james@getvero.com"}</td>
   </tr>
   <tr>
