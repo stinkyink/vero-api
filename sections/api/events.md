@@ -1,6 +1,10 @@
 # Events API
 
-The core offering of Vero is to respond to how your users interact with your software. Tracking user actions is done via our Events API.
+The core offering of Vero is to respond to how your users interact with your software. Tracking user actions is done via our Events API. 
+
+Vero allows you to view all events that were tracked via the API from the web interface. Furthermore you can build campaigns that are triggered by specific user actions. For example, send a 20% off coupon 2 weeks after a user performs "signed_up" but does not perform "purchase".
+
+On top of the event name, the Event API accepts two types of data: user and event data. The difference between these two types is subtle but very important. User data are globally accessible properties describing the user that change very infrequently. These properties are tied to the user profile, and examples include name, age, and signup_date. Event data on the other hand are additional properties which describe the event and are only accessible in the scope of the event. These properties are tied to the event profile, and examples include product name, and task name.
 
 ## Track events
 
