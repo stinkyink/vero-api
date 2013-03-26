@@ -13,7 +13,8 @@ Event data on the other hand are additional properties which describe the event 
 Vero allows you to make use of user and event properties in your campaigns for either conditions (e.g. User has user property age equal to 25) or content. To sub a property into your Vero campaign, use the following format:
 
 <pre>
-{{user.age}} or {{event.item_price}}
+{{user.age}} # User property
+{{event.item_price}} # Event property
 </pre>
 
 ## Track events
