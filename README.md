@@ -23,6 +23,7 @@ Libraries
 * [vero](https://github.com/getvero/vero) - official Rails 3.x gem
 * [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to [benorama](https://github.com/benorama))
 * [vero-ios](https://github.com/getvero/vero-ios) - A simple Vero API wrapper for iOS devices
+* [vero-php](https://github.com/getvero/vero-php) - Example scripts for PHP
 
 Help us make it better
 ----------------------
