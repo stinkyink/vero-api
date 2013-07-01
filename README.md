@@ -21,9 +21,10 @@ Libraries
 -----------------
 
 * [vero](https://github.com/getvero/vero) - official Rails 3.x gem
-* [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to [benorama](https://github.com/benorama))
-* [vero-ios](https://github.com/getvero/vero-ios) - A simple Vero API wrapper for iOS devices
+* [vero-python](https://github.com/waveaccounting/vero-python) - third-party Python library (special thanks to [WaveAccounting](https://github.com/waveaccounting))
 * [vero-php](https://github.com/getvero/vero-php) - Example scripts for PHP
+* [vero-ios](https://github.com/getvero/vero-ios) - A simple Vero API wrapper for iOS devices
+* [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to [benorama](https://github.com/benorama))
 
 Help us make it better
 ----------------------
