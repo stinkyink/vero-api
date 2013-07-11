@@ -78,7 +78,7 @@ This endpoint will track an event for a user. The following parameters are accep
 
 **Tracking a user sign up**
 ```
-POST https://www.getvero.com/api/v2/events/track
+POST https://api.getvero.com/api/v2/events/track
 {
   "auth_token": "your_auth_token",
   "identity": {
@@ -91,7 +91,7 @@ POST https://www.getvero.com/api/v2/events/track
 
 **Tracking a user adding a product to cart**
 ```
-POST https://www.getvero.com/api/v2/events/track
+POST https://api.getvero.com/api/v2/events/track
 {
   "auth_token": "your_auth_token",
   "identity": {

@@ -46,7 +46,7 @@ Simply copy in the code to the right and replace your API Key to do so.
       window._kmq.splice(0, 0, vero.listeners.attach_to_kissmetrics);
     loadKissmetrics();
   }]);
-  (function() {var ve = document.createElement('script'); ve.type = 'text/javascript'; ve.async = true; ve.src = '//www.getvero.com/assets/m.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
+  (function() {var ve = document.createElement('script'); ve.type = 'text/javascript'; ve.async = true; ve.src = '//cdn.getvero.com/m.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
 </script>
 ```
 

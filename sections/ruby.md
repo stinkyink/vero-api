@@ -108,7 +108,7 @@ class PagesController < ActionController::Base
 
   def documentation
     # Tell Vero that a user viewed the documentation
-    current_user.track('viewed_documentation', {link: 'http://getvero.com/docs'})
+    current_user.track('viewed_documentation', {link: 'http://www.getvero.com/docs'})
   end
 end
 ```

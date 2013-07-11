@@ -50,7 +50,7 @@ This endpoint will track an event for a user. The following parameters are accep
 **Example request:**
 
 ```
-POST https://www.getvero.com/api/v2/users/track
+POST https://api.getvero.com/api/v2/users/track
 
 {
   "auth_token": "exampleAuthToken",
@@ -106,7 +106,7 @@ This endpoint will update the email address and/or custom attributes for a user.
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/edit
+PUT https://api.getvero.com/api/v2/users/edit
 
 {
   "id": "james@getvero.com",
@@ -125,7 +125,7 @@ By default our Javascript library will detect a customer's timezone and track th
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/edit
+PUT https://api.getvero.com/api/v2/users/edit
 
 {
   "id": "james@getvero.com",
@@ -186,7 +186,7 @@ This endpoint will update the tags for an existing user. The following parameter
 **Example request:**
 
 ```
-PUT https://www.getvero.com/api/v2/users/tags/edit
+PUT https://api.getvero.com/api/v2/users/tags/edit
 
 {
   "id": "james@getvero.com",
@@ -226,7 +226,7 @@ This endpoint will unsubscribe a user from all future email communications. The 
 **Example request:**
 
 ```
-POST https://www.getvero.com/api/v2/users/unsubscribe
+POST https://api.getvero.com/api/v2/users/unsubscribe
 
 {
   "id": "james@getvero.com",

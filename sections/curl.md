@@ -13,7 +13,7 @@ Events can be used to send an email straight away, with delay, segmented or in s
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v2/events/track \
+curl http://api.getvero.com/api/v2/events/track \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d identity[email]=chris.hexton@gmail.com \
 -d event_name=viewed_documentation 
@@ -25,7 +25,7 @@ Further to recording a user's individual details, you may want to include data s
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v2/events/track \
+curl http://api.getvero.com/api/v2/events/track \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d identity[email]=chris.hexton@gmail.com \
 -d event_name=viewed_documentation \
@@ -40,7 +40,7 @@ This enables you to test Vero without any risk of accidentally emailing your cus
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v2/events/track \
+curl http://api.getvero.com/api/v2/events/track \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d development_mode=true
 ```
@@ -53,7 +53,7 @@ When you track an event in Vero, we simultaneously handle user identification. A
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v2/events/track \
+curl http://api.getvero.com/api/v2/events/track \
 -d
 auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \
 -d identity[email]=chris.hexton@gmail.com
@@ -67,7 +67,7 @@ You do not need to pass each variable with every request, they are stored the fi
 
 **EXAMPLE REQUEST**
 ```curl
-curl http://www.getvero.com/api/v2/events/track \
+curl http://api.getvero.com/api/v2/events/track \
 -d auth_token=NTczNjhlNTZjYmI3NzkwNDg4ZjI5OGRjYzc4N2U2MGRhNWZkM2FkYjowYzFhZDc2OGNiZDk5OTA1MzI5YmY3YjMxM2FjZDI1NWNlMGIxMWZm \ 
 -d identity[email]=chris.hexton@gmail.com \
 -d identity[name]="Chris Hexton" \
