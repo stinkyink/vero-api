@@ -11,7 +11,7 @@ Our Javascript library is one of the fastest ways to get up and running with Ver
     api_key: "fb13cddfff68c1c121c6f19f6c8467e797f46eda"
   }]);
   
-  (function(){var ve = document.createElement('script');ve.type = 'text/javascript';ve.async = true;ve.src = '//cdn.getvero.com/m.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
+  (function(){var ve = document.createElement('script');ve.type = 'text/javascript';ve.async = true;ve.src = '//d3qxef4rp70elm.cloudfront.net/m.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
 </script>
 ```
 
