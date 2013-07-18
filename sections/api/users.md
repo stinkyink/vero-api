@@ -2,11 +2,11 @@
 
 Vero maintains a representation of each user you track with our API or CapsuleCRM integration. If you want to change any of your user's details, you can make use of our new User API. 
 
-## Tracking users
+## Create users
 
 ### POST /api/v2/users/track
 
-This endpoint will track an event for a user. The following parameters are accepted:
+This endpoint will create a user. The following parameters are accepted:
 
 <table>
   <tr>
