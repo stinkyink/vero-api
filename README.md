@@ -25,6 +25,7 @@ Libraries
 * [vero-php](https://github.com/getvero/vero-php) - Example scripts for PHP
 * [vero-ios](https://github.com/getvero/vero-ios) - A simple Vero API wrapper for iOS devices
 * [grails-vero](https://github.com/benorama/grails-vero) - third-party Grails library (special thanks to [benorama](https://github.com/benorama))
+* [vero-perl](https://metacpan.org/pod/release/CARLOS/Vero-API-v0.1.0/lib/Vero/API.pm) - third-party Perl interface for Vero (special thanks to [Carlos at Regent Markets](regentmarkets.com).
 
 Help us make it better
 ----------------------
